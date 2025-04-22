@@ -28,7 +28,15 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
-        </plugin>
+    </plugin>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.4.0</version>
+      <configuration>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+      </configuration>
+    </plugin>
     </plugins>
 </build>
 </project>
